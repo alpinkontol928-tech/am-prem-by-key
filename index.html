@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AM Premium — Unlock the full timeline</title>
+<meta name="description" content="Aktivasi Arlight Motion Premium langsung dari email kamu. Cepat, tanpa install APK modded.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 26 26" fill="none">
+        <rect x="9" y="9" width="8" height="8" rx="1.5" transform="rotate(45 13 13)" stroke="#2fe8ff" stroke-width="2"/>
+        <circle cx="13" cy="13" r="2" fill="#ff2ec4"/>
+      </svg>
+      AM&nbsp;Premium
+    </a>
+    <a href="#activate" class="nav-cta">Activate now</a>
+  </div>
+</nav>
+
+<div class="ruler wrap" id="top">
+  <div class="ruler-ticks" id="ticks"></div>
+  <div class="playhead"></div>
+</div>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">AM · 00:00:03:12</div>
+    <h1>Timing is<br><span class="grad">everything.</span></h1>
+    <p class="lead">
+      Buka semua efek, transisi, dan aset premium Arlight Motion langsung
+      dari akun email kamu sendiri — tanpa APK modifikasi, tanpa root,
+      tanpa drama.
+    </p>
+    <div class="hero-actions">
+      <a href="#activate" class="btn btn-primary">Activate AM Premium</a>
+      <a href="#features" class="btn btn-ghost">Lihat fitur</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="section-label">// Track 01 — What premium unlocks</div>
+    <div class="track">
+      <div class="clip">
+        <span class="dot"></span>
+        <div class="tc">CLIP_01</div>
+        <h3>Full effect library</h3>
+        <p>Semua overlay, transisi, dan animated stiker premium kebuka tanpa batas.</p>
+      </div>
+      <div class="clip">
+        <span class="dot"></span>
+        <div class="tc">CLIP_02</div>
+        <h3>Export tanpa watermark</h3>
+        <p>Render project kamu bersih, siap upload langsung ke platform manapun.</p>
+      </div>
+      <div class="clip">
+        <span class="dot"></span>
+        <div class="tc">CLIP_03</div>
+        <h3>Resolusi & bitrate tinggi</h3>
+        <p>Export kualitas maksimal buat konten yang butuh detail tajam.</p>
+      </div>
+      <div class="clip">
+        <span class="dot"></span>
+        <div class="tc">CLIP_04</div>
+        <h3>Aktivasi resmi via akun</h3>
+        <p>Premium nempel ke akun email AM kamu, bukan lewat file APK bajakan.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="activate" id="activate">
+    <div class="activate-head">
+      <div class="section-label">// Track 02 — Activation</div>
+      <h2>Activate your premium keyframe.</h2>
+      <p>Tiga langkah singkat. Masukin email akun Alight Motion kamu, buka
+        link login yang dikirim ke inbox, lalu tempel link-nya di sini
+        buat verifikasi.</p>
+    </div>
+
+    <div class="panel">
+
+      <div class="stepper" id="stepper">
+        <div class="stepper-fill" id="stepperFill"></div>
+        <div class="step" data-step="1">
+          <div class="kf"></div>
+          <div class="kf-label">EMAIL</div>
+        </div>
+        <div class="step" data-step="2">
+          <div class="kf"></div>
+          <div class="kf-label">VERIFY LINK</div>
+        </div>
+        <div class="step" data-step="3">
+          <div class="kf"></div>
+          <div class="kf-label">ACTIVATED</div>
+        </div>
+      </div>
+
+      <div id="statusBox" class="status"></div>
+
+      <!-- Stage 1: email -->
+      <div class="stage visible" id="stage1">
+        <div class="field">
+          <label for="emailInput">Email akun Alight Motion</label>
+          <input id="emailInput" type="email" placeholder="nama@gmail.com" autocomplete="email">
+          <div class="hint">Login link bakal dikirim ke email ini.</div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="sendBtn">Kirim login link</button>
+        </div>
+      </div>
+
+      <!-- Stage 2: verify link -->
+      <div class="stage" id="stage2">
+        <div class="field">
+          <label for="linkInput">Link login dari email</label>
+          <input id="linkInput" type="url" placeholder="https://...">
+          <div class="hint">Cek inbox &amp; folder spam, lalu tempel link login di sini.</div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="verifyBtn">Verifikasi &amp; aktifkan</button>
+          <button class="link-btn" id="backBtn">Ganti email</button>
+        </div>
+      </div>
+
+      <!-- Stage 3: success -->
+      <div class="stage" id="stage3">
+        <div class="success-block">
+          <div class="badge"></div>
+          <h3>Premium berhasil diaktifkan</h3>
+          <p>Enjoy Arlight Motion Premium kamu. Buka aplikasi dan login pakai email yang sama.</p>
+          <div class="btn-row" style="justify-content:center; margin-top: 24px;">
+            <button class="btn btn-ghost" id="restartBtn">Aktivasi akun lain</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <p class="mono">AM_PREMIUM // build 2026</p>
+      <p class="mono">not affiliated with Alight Motion</p>
+    </div>
+    <p class="footer-note">
+      Situs ini adalah layanan aktivasi pihak ketiga dan tidak berafiliasi resmi
+      dengan Alight Motion / Alight Creative, Inc. Aktivasi bekerja dengan
+      mengirim link login ke email akun Alight Motion kamu.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
